@@ -1,0 +1,51 @@
+<svg width="400" height="120" viewBox="0 0 400 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Modern gradient definitions -->
+  <defs>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#a855f7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ec4899;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Clean icon: Graduation cap with path/arrow -->
+  <g transform="translate(15, 25)">
+    <!-- Graduation cap base -->
+    <path d="M 35 15 L 60 25 L 35 35 L 10 25 Z" fill="url(#primaryGrad)" stroke="#6366f1" stroke-width="1.5"/>
+    
+    <!-- Cap top -->
+    <rect x="33" y="8" width="4" height="7" fill="#8b5cf6" rx="1"/>
+    <circle cx="35" cy="7" r="3" fill="#ec4899"/>
+    
+    <!-- Ascending path/arrow -->
+    <path d="M 8 55 L 22 40 L 36 45 L 50 30 L 62 35" 
+          stroke="url(#accentGrad)" 
+          stroke-width="3" 
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          fill="none"/>
+    
+    <!-- Arrow head -->
+    <path d="M 62 35 L 56 32 L 58 38 Z" fill="url(#accentGrad)"/>
+    
+    <!-- Path dots for visual interest -->
+    <circle cx="8" cy="55" r="2.5" fill="#6366f1" opacity="0.6"/>
+    <circle cx="22" cy="40" r="2.5" fill="#8b5cf6" opacity="0.6"/>
+    <circle cx="36" cy="45" r="2.5" fill="#a855f7" opacity="0.6"/>
+    <circle cx="50" cy="30" r="2.5" fill="#ec4899" opacity="0.6"/>
+  </g>
+  
+  <!-- UniPath text with modern styling -->
+  <text x="100" y="70" font-family="'Inter', 'Segoe UI', Arial, sans-serif" font-size="42" font-weight="800" letter-spacing="-1">
+    <tspan fill="url(#primaryGrad)">Uni</tspan><tspan fill="url(#accentGrad)">Path</tspan>
+  </text>
+  
+  <!-- Tagline -->
+  <text x="100" y="90" font-family="'Inter', 'Segoe UI', Arial, sans-serif" font-size="14" fill="#94a3b8" font-weight="500" letter-spacing="0.5">
+    Your AI Career Journey
+  </text>
+</svg>

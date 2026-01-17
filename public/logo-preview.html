@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniPath Logo Preview</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            width: 100%;
+        }
+        
+        .title {
+            text-align: center;
+            color: white;
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 3rem;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+        
+        .logo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .logo-card {
+            background: white;
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .logo-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 50px rgba(0,0,0,0.3);
+        }
+        
+        .logo-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        
+        .logo-preview {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 150px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            border-radius: 12px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .logo-preview img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .logo-info {
+            font-size: 0.875rem;
+            color: #666;
+            text-align: center;
+        }
+        
+        .dark-preview {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+        }
+        
+        .color-palette {
+            background: white;
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+        
+        .palette-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        
+        .color-swatches {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .swatch {
+            text-align: center;
+        }
+        
+        .swatch-color {
+            width: 100px;
+            height: 100px;
+            border-radius: 12px;
+            margin-bottom: 0.5rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        }
+        
+        .swatch-name {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 0.25rem;
+        }
+        
+        .swatch-hex {
+            font-size: 0.75rem;
+            color: #666;
+            font-family: 'Courier New', monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">🎨 UniPath Brand Identity</h1>
+        
+        <div class="logo-grid">
+            <div class="logo-card">
+                <h2 class="logo-title">Full Logo (Light)</h2>
+                <div class="logo-preview">
+                    <img src="unipath-logo.svg" alt="UniPath Full Logo">
+                </div>
+                <p class="logo-info">Main logo with text and tagline<br>800×200px • SVG</p>
+            </div>
+            
+            <div class="logo-card">
+                <h2 class="logo-title">Full Logo (Dark)</h2>
+                <div class="logo-preview dark-preview">
+                    <img src="unipath-logo.svg" alt="UniPath Full Logo">
+                </div>
+                <p class="logo-info">Main logo on dark background<br>800×200px • SVG</p>
+            </div>
+            
+            <div class="logo-card">
+                <h2 class="logo-title">Icon Only</h2>
+                <div class="logo-preview">
+                    <img src="unipath-icon.svg" alt="UniPath Icon" style="max-width: 100px;">
+                </div>
+                <p class="logo-info">Compact icon for favicon & small uses<br>100×100px • SVG</p>
+            </div>
+        </div>
+        
+        <div class="color-palette">
+            <h2 class="palette-title">Brand Colors</h2>
+            <div class="color-swatches">
+                <div class="swatch">
+                    <div class="swatch-color" style="background: #6366f1;"></div>
+                    <div class="swatch-name">Primary Indigo</div>
+                    <div class="swatch-hex">#6366f1</div>
+                </div>
+                <div class="swatch">
+                    <div class="swatch-color" style="background: #8b5cf6;"></div>
+                    <div class="swatch-name">Purple</div>
+                    <div class="swatch-hex">#8b5cf6</div>
+                </div>
+                <div class="swatch">
+                    <div class="swatch-color" style="background: #a855f7;"></div>
+                    <div class="swatch-name">Light Purple</div>
+                    <div class="swatch-hex">#a855f7</div>
+                </div>
+                <div class="swatch">
+                    <div class="swatch-color" style="background: #ec4899;"></div>
+                    <div class="swatch-name">Accent Pink</div>
+                    <div class="swatch-hex">#ec4899</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
