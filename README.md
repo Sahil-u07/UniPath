@@ -26,5 +26,5 @@ Your AI-powered assistant for job search, resume optimization, mock interviews, 
 ## Contact
 
 - **GitHub:** [Sahil-u07](https://github.com/Sahil-u07)
-- **LinkedIn:** [Sahil Lenka](https://www.linkedin.com/in/sahil-lenka-3608a2311/)
-- **Email:** sahillenka44@gmail.com
+- **LinkedIn:** [Sahil Lenka](https://www.linkedin.com/in/sahil-lenka-3608a2311/),[ARYAN PANDEY](www.linkedin.com/in/aryan---pandey)
+- **Email:** sahillenka44@gmail.com,aryanpandey329@gail.com
